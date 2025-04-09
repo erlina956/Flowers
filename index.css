@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(31.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    margin: 0;
+    padding: 20px;
+  }
+  
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #d16ba5, rgb(158, 70, 85));
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .back-button::before {
+    content: '←';
+    position: absolute;
+    left: -25px;
+    transition: left 0.3s ease;
+    font-size: 18px;
+  }
+
+  .back-button:hover::before {
+    left: 10px;
+  }
+
+  .back-button:hover {
+    padding-left: 35px;
+   background-color: palevioletred;
+  }
+
+
+  h1 {
+    color: #fff;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+  }
+  
+  #new-book-button {
+    background: linear-gradient(135deg, #d16ba5, rgb(158, 70, 85));
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 190px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+  }
+  
+  #new-book-button:hover {
+    background-color: palevioletred;
+  }
+  
+  #new-book-form {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 20px auto;
+    display: none;
+  }
+  
+  #new-book-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  #new-book-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+  }
+  
+  #new-book-form button {
+    background: linear-gradient(135deg, #d16ba5, rgb(158, 70, 85));
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  #new-book-form button:hover {
+    background-color: palevioletred;
+  }
+  
+  #books-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .book-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .book-card h3 {
+    margin: 0 0 10px;
+    color: black;
+  }
+  
+  .book-card p {
+    margin: 5px 0;
+  }
+  
+  .book-card .status {
+    color: black;
+    font-style: italic;
+  }
+  
+  .book-card button {
+    background: linear-gradient(135deg, #d16ba5, rgb(158, 70, 85));
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .book-card button:hover {
+    background-color: palevioletred;
+  }
+
+
+  #color{
+    width: 100px;
+    border-radius: 10px;
+    
+  }
+
+
+
+  @media(max-width:450px) {
+   
+    body{
+      width: 250px;
+      height: 120vh;
+      background-image: url(31.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }

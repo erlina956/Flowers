@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+
+    <a href="index.html" class="back-button">Back</a>
+
+
+    <h1>My Orders</h1>
+    
+    <button id="new-book-button">New Order</button>
+
+    <!-- New Book Form -->
+    <form id="new-book-form">
+      <label for="title">Name:</label>
+      <input type="text" id="title" required />
+      <br />
+      <label for="author">Delivery date:</label>
+      <input type="text" id="author" required />
+      <br />
+      <label for="pages">Quantity:</label>
+      <input type="number" id="pages" required />
+      <br />
+      <div style="display: flex; justify-self: flex-start">
+        <label for="is-read">Delivery:</label>
+        <input type="checkbox" id="is-read" />
+      </div>
+      <br />
+      <button type="submit">Order</button>
+    </form>
+
+    <!-- Books Container -->
+    <div id="books-container"></div>
+
+    <div id="books_container"></div>
+  </body>
+</html>

@@ -1,0 +1,153 @@
+body{
+    background: linear-gradient(135deg, #facad2, #ff95a6);
+    animation: fadeInBounce 2s ease-in-out;
+}
+
+@keyframes fadeInBounce {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(10px);
+    }
+    70% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+  }
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #cc4b72, rgb(158, 70, 85));
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .back-button::before {
+    content: '←';
+    position: absolute;
+    left: -25px;
+    transition: left 0.3s ease;
+    font-size: 18px;
+  }
+
+  .back-button:hover::before {
+    left: 10px;
+  }
+
+  .back-button:hover {
+    padding-left: 35px;
+   background-color: rgb(184, 93, 108);
+  }
+
+.one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img{  
+    height: 80px;
+    width: 80px;
+}
+
+.item{
+    border: 2px  #021020;
+    background: linear-gradient(135deg, #cc4b72, rgb(158, 70, 85));
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    margin: 35px;
+    padding: 20px 0;
+    color: #e94560;
+    transition: transform 1s;
+}
+
+.item:hover{
+   transform: translateY(10px);
+   box-shadow:8px 5px  rgb(214, 141, 153);
+}
+
+p{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+button{
+    background-color: #e94560;
+    color: #fff;
+    border: 2px #e94560;
+    border-radius: 5px ;
+    width: 15%;
+    padding: 5px 0;
+}
+
+button:hover{
+    background-color: #f39c9c;
+}
+
+
+.hidden{
+    display: none;
+}
+
+
+@media(max-width:450px) {
+
+
+    .item{
+        border: 2px  #021020;
+        background-color:  rgb(204, 118, 132);
+        border-radius: 10px;
+        text-align: center;
+        width: 78%;
+        margin: 35px;
+        padding: 20px 0;
+        color: #e94560;
+        transition: transform 1s;
+    }
+
+    .item:hover{
+        transform: translateY(10px);
+        box-shadow:8px 5px  rgb(214, 141, 153);
+    }
+
+
+     
+    button{
+        background-color: #e94560;
+        color: #fff;
+        font-size: 15px;
+        border: 2px #e94560;
+        border-radius: 5px ;
+        width: 35%;
+        padding: 5px 0;
+    }
+
+    button:hover{
+       background-color: #f39c9c;
+    }
+
+
+    p{
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+    }
+}

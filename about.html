@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <title>Learne More</title>
+</head>
+<body>
+    <a href="index.html" class="back-button">Back</a>
+
+
+    <section  class="explore-section" id="explore">
+
+        <div class="one">
+            
+        <div class="item">
+            <img src="tulips.png">
+          <p>1. Fresh, Handpicked, and High-Quality Blooms</p>
+          <button onclick="toggleText('htmlText')">Learne More</button>
+          <p id="htmlText" class="hidden"> ✅ Farm-Fresh Selection: We work with trusted suppliers to ensure that every flower is vibrant, fragrant, and long-lasting.</p>
+        </div>
+
+        <div class="item">
+            <img src="bouquet.png" >
+            <p>  2. Customized Floral Designs for Every Occasion</p>
+            <button onclick="toggleText('cssText')">Learne More</button>
+            <p id="cssText" class="hidden"> 🎁 Tailored to Your Needs: Whether you have a specific color scheme, flower preference, or arrangement style in mind, our expert florists bring your vision to life.</p>
+        </div>
+
+        <div class="item">
+            <img src="delivery-truck (1).png">
+            <p>3. Reliable, Fast, and Hassle-Free Delivery</p>
+            <button onclick="toggleText('jsText')">Learne More</button>
+            <p id="jsText" class="hidden">🚀 Same-Day & Next-Day Delivery: Need flowers urgently? Our same-day delivery ensures that your bouquet reaches its destination without delay.</p>
+        </div>
+        </div>
+
+    </section>
+
+    <script>
+        function toggleText(id) {
+         const one = document.getElementById(id);
+         one.classList.toggle('hidden');
+     }
+
+    </script>
+
+</body>
+</html>
